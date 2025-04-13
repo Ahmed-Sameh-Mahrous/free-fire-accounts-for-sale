@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شحن الجواهر</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #ff6f00);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            font-size: 1rem;
+            margin-right: 100px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ffffff55;
+            border-radius: 50px;
+            padding: 8px;
+        }
+
+        .contact-container {
+            background: linear-gradient(to bottom right, #14142b, #2c2c54);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            margin-top: 20px;
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            background-color: #1f1f3b;
+            color: white;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: left 10px center;
+            background-size: 16px;
+            padding-right: 30px;
+            box-sizing: border-box;
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-container button:hover {
+            background-color: #ff8800;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#" target="_blank">أسعار الحسابات</a>
+        <a href="join-us.html" target="_blank">شرح فكرة البيع فى الموقع</a>
+    </nav>
+
+    <div class="contact-container">
+        <h2>شحن جواهر</h2>
+        <form action="https://formspree.io/f/manevdjb" method="post">
+            <input type="text" name="user-name" placeholder="الاسم الكامل (الحقيقى)" required />
+            <input type="text" name="player-name" placeholder="الاسم الكامل (باللعبة)" required />
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+            <input type="text" name="phone" placeholder="رقم الهاتف" required />
+
+            <select name="device" required>
+                <option disabled selected>اختر الجهاز الذى تلعب عليه</option>
+                <option value="pc">الكمبيوتر</option>
+                <option value="Android">الاندرويد</option>
+                <option value="iphone">أيفون</option>
+                <option value="ipad">ايباد</option>
+            </select>
+
+            <select name="diamonds" required>
+                <option disabled selected>عدد الجواهر</option>
+                <option value="1000">💎 1000</option>
+                <option value="2500">💎 2500</option>
+                <option value="5000">💎 5000</option>
+                <option value="10000">💎 10000</option>
+                <option value="15000">💎 15000</option>
+            </select>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
