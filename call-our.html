@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>اتصل بنا</title>
     <style>
@@ -12,11 +11,28 @@
             font-family: 'Tahoma', sans-serif;
             background: linear-gradient(135deg, #0f0c29, #302b63, #ff6f00);
             color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            text-align: center;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            gap: 2rem;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ffffff55;
+            border-radius: 50px;
+            padding: 8px;
         }
 
         .contact-container {
@@ -26,6 +42,7 @@
             max-width: 500px;
             width: 100%;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+            margin: 50px auto 0;
         }
 
         .contact-container h2 {
@@ -61,15 +78,26 @@
 </head>
 
 <body>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="#">أسعار الحسابات</a>
+        <a href="Diamonds.html">شحن جواهر</a>
+        <a href="join-us.html" target="_blank">شرح فكرة البيع بالموقع</a>
+    </nav>
+
     <div class="contact-container">
         <h2>اتصل بنا</h2>
         <form action="https://formspree.io/f/xldjzeby" method="POST">
             <input type="text" name="name" placeholder="الاسم الكامل" required />
             <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+            <input type="text" name="رقم الهاتف" placeholder="رقم الهاتف" required />
+
             <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
             <button type="submit">إرسال</button>
         </form>
     </div>
+
 </body>
 
 </html>
