@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmed-sameh-mahrous.github.io/free-fire-accounts-for-sale/sitemap.xml
