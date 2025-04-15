@@ -114,11 +114,11 @@
 
     <div class="contact-container">
         <h2>شحن جواهر</h2>
-        <form action="https://formspree.io/f/manevdjb" method="post">
+        <form action="process.php" method="post">
             <input type="text" name="user-name" placeholder="الاسم الكامل (الحقيقى)" required />
             <input type="text" name="player-name" placeholder="الاسم الكامل (باللعبة)" required />
             <input type="email" name="email" placeholder="البريد الإلكتروني" required />
-            <input type="text" name="phone" placeholder="رقم الهاتف" required />
+            <input type="number" name="phone" placeholder="رقم الهاتف" required />
 
             <select name="device" required>
                 <option disabled selected>اختر الجهاز الذى تلعب عليه</option>
@@ -127,7 +127,7 @@
                 <option value="iphone">أيفون</option>
                 <option value="ipad">ايباد</option>
             </select>
-
+            
             <select name="diamonds" required>
                 <option disabled selected>عدد الجواهر</option>
                 <option value="1000">💎 1000</option>
